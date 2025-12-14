@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+        }
+
+        header {
+            background: #222;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .product-card {
+            width: 350px;
+            background: white;
+            margin: 30px auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 5px;
+            background: #fafafa;
+        }
+
+        .card-body {
+            margin: 5px 0;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        .desc {
+            color: #555;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .price {
+            font-size: 18px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .old-price {
+            color: grey;
+            text-decoration: line-through;
+            font-size: 14px;
+            margin-left: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background: #0065d1;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Shop From Me</h1>
+    </header>
+
+    <div class="product-card">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQBBgMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQMGAAIHAQj/xABBEAACAQMCBAQDBwEGBQMFAAABAgMABBEFEgYhMUETIlFhFHGBBzJCUpGhwSMVM2Kx0eEWJENTcjRjoiWUstPw/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACQRAAICAgICAgIDAAAAAAAAAAABAhEDEiExBEETIhRRBTJh/9oADAMBAAIRAxEAPwDkui6nFYxX0FxG7QXsHgyOnN4+YIIB68xzHLIpppXEtjp1vbxfBSP4TElztywJyGz6jpjpiqpmvKALieJtNk8FpbCVtghjlyEPiIqIO+cMChK/+RHQsG9h4qslgSO6snvRGSAZlQbhuU55dDyPTv1J5mqdmvKALbe8S2FxpM1mLE73h2eKY0Bd8riRsd+R/WqlXua8oAyvRWAVsEp0BriiIrWWRcooIrIotzAdz0ppYKXzAjFR0DDsafQrFjWssf34m5+1Ysft+1EzXF3ayPEzEODjBHUetbxXfIJPEso/Q0bBQMIq3EVMEitpQTDIUfHKNv8AWtvhmChypCn8WMirXIqF/hVnhUxFt7V78PRQhZ4VZ4VMvArwwU6AWmKtTF7UxaCtGhpUAtMVRtHTJoajaGk1wF0NNNtRNCAi88UVNarGct1FO+BIrUwSm4A3joGPI0FqkAutReO3B8PdgHtXl54uDts93w8jm1FISTKjOD71JJawSRjw/vUbfcPXtttlA3Rnv3FQxweCMucEVn8kWvq7O9xalUlwBCwKff8ApUltcNYMTE3M8jkZpv4QvIMR8mApXHpV1NcOiKCVPM55URyKX9mavFpzjRA03isWfBJ9q2bT7h4GnWElB1OKZQaRsTMudwPSnks7w6aIGh8NSu0t6iol5FNKHI3Bav5CgbGJA6A1u8JUYJI+VHzgNLiNcqO+KwwvONyryHfFdPynGsCaC9F4VvNWtTcRFFTOAWPWsploWq3mmWzQQFHjzkZ7V7Xm5s/lqb0ao6oeNjUeUc7rKyva+gPkjytgrE4ArMVsj7aAJY7SVyOXWrVoX2b8R61btcWlnthHR5m2B/l60s0K/gguVabsRX0JwrxbpEuhxF72CFokIYPIFx71UbbE3RwG/wCFrnSp3gvlKSKcMvpQjWMaCrh9p/GFjqmrv/ZTiaNECeKDkMfY1R7eaS4Y7hgdzmodpjVNE0EDs2yLqe9N7SCOztHnk5BBz9jWtrGllZtdTYOPuKe5pfsmnjMbyNl23lfemBruN8c3Em0sd0b4yF9M98fKoJrZ7afw5lKv1GTnIPcHoR7inWj6e805aVSFTqD60fqyx3VymmxQo8mwszMceDy6g/x3oArMLJEJHZmEh8q4XOAe9EWF5LZoQr5jb8J5g1B8MckMckHB9qljtypyD9D0oAaQXNpOAP8A07+/Nf8Aap2hCjIII9aTR2qmZUuJWgic+Z1UttHcgVKZNRS58WMeJGBsUeGqrtHTKgAZxVKVdktB5FahM1ujJIoLxNE/dD5gfkR0rfOedaWmLUhaHNamCnOl6JqOrOFsbdmHdugFXXRvsycvG2r3SoH5iJDzNMVnL47GWZ/DgjaRz+FRmrVov2a6pqW2W7HwsPqetdm03h7SdGixb28akfiK+avbi+kfyWMTO3qOn600S2c51HhO24etN0b52j71V7SNLv8AXtRkg0y2yBgtL+GP…

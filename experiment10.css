@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+.middle-nav{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 300px;
+}
+.end-nav{
+    text-align: right;
+    justify-content: right;
+    align-items: right;
+    margin: 10px;
+}
+.web-name{
+    font-weight: bold;
+    font-size: larger;
+}
+.nav-btn{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.end-btn{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.info{
+    margin-bottom: 450px;
+}

@@ -23,14 +23,16 @@ tr{
  i{
     color: grey;
  }
+ 
  .product-card{
     box-shadow:0 4px 8px 0 rgba(60, 0, 0, 0.2);
     max-width: 350px;
     margin: auto;
-    text-align: left;
+    text-align: center;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     overflow:hidden;
+    margin-bottom: 200px;
  }
  .product-image-box{
     width:100%;
@@ -39,16 +41,22 @@ tr{
     padding:15px;
     box-sizing:border-box;
  }
+
+ .product-details{
+   text-align: left;
+ }
  .product-title{
     font-size: 1.1em;
     margin: 10px 0 5px;
-    color: #333;
- }
+    color: #333;}
+
+
  .product-description{
     color:rgb(128, 128, 128);
     font-size:1.1em;
     margin-right: 5px;
  }
+
 .add-to-cart{
     border: none;
     outline: 0;

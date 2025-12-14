@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 300px;
+
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+}
+.avatar{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(13, 13, 156);
+    color: white;
+    border-radius: 50%;
+   display: flex;
+  text-align: center;
+  justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: auto;
+}
